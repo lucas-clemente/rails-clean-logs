@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["luke.clemente@gmail.com"]
   gem.description   = %q{Cleans up rails logs by removing assets.}
   gem.summary       = %q{Rails log cleaner}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/lucas-clemente/rails-clean-logs"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
