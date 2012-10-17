@@ -6,7 +6,7 @@ module RailsCleanLogs
     def initialize(app)
       @app = app
       Rails.application.assets.logger = 
-        Logger.new(RUBY_PLATFORM.downcase =~ /mswin(?!ce)|mingw|cygwin|bccwin/ ? 'null' : '/dev/null')
+        Logger.new(RUBY_PLATFORM.downcase =~ /mswin(?!ce)|mingw|cygwin|bccwin/ ? 'NUL' : '/dev/null')
     end
 
     def call(env)
